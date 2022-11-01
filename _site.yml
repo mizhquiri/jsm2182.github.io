@@ -1,14 +1,16 @@
 name: "Yay internet!"
 output_dir: "."
 navbar:
-  title: "Home"
+  title: "Welcome"
   right:
-    - text: "About"
+    - text: "Why Integration?"
       href: about.html
     - icon: fa-envelope fa-lg
-      href: mailto:<you@youremail.com>
+      href: mailto:<jsm2182@cumc.columbia.edu.com>
+    - icon: fa-brands fa-linkedin
+      href: https://www.linkedin.com/in/mizhquiri/
     - icon: fa-github fa-lg
-      href: http://github.com/<YOUR_GH_NAME>/
+      href: https://github.com/mizhquiri
 output:
   html_document:
-    theme: cerulean
+    theme: flatly

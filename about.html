@@ -11,7 +11,7 @@
 
 
 
-<title>Welcome.</title>
+<title>Why Integration?</title>
 
 <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -29,9 +29,6 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -231,69 +228,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -301,16 +235,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -360,66 +284,22 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Welcome.</h1>
+<h1 class="title toc-ignore">Why Integration?</h1>
 
 </div>
 
 
-<p>My name is Jennifer Mizhquiri. My passion lies in the nexus points of
-business intelligence, responsible data analysis, and employee
-wellness.</p>
-<div id="project-management" class="section level2">
-<h2>Project Management</h2>
-<p>I was a new manager five months before the pandemic and knowing how
-these three intersect to drive win-win solutions for employer and
-employee has been essential. Since the pandemic, I have hired and
-retained a more than doubling of direct-report staff and have worked
-with a diverse group to ensure that we are able to meet all project
-deliverables.</p>
-</div>
-<div id="integrating-processes" class="section level2">
-<h2>Integrating Processes</h2>
-<p>My motto can be boiled down to Integration, Implementation, and
-Innovation. And the fourth <em>I</em> is Intersection, but that’s not as
-catchy. At the crux of Public Health is bringing multiple stakeholders
-to the table to answer questions and generate new ones. Of these, to me
-the most important is integration.</p>
+<p>So often we find ourselves mired in processes that have long
+overstayed their welcome. Addressing the calculus of system-level issues
+whether they are in the workplace or in your community is critical to
+driving data-driven solutions &amp; innovation. My passion is leveraging
+the access points and the pain points to streamline processes.</p>
+<p><em>Integration</em> is where we can begin our journey.</p>
 <p><img
-src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Aufsatz.png" /></p>
-</div>
-<div id="technology" class="section level2">
-<h2>Technology</h2>
-<p>I have worked in the digital mental health space working with an
-interdisciplinary group to launch web applications.</p>
-</div>
-<div id="public-health" class="section level2">
-<h2>Public Health</h2>
-<p>I have been in the research world focusing on mental and behavioral
-health since 2017. I am currently a 2nd - year Masters Student in
-Mailman where I focus on Health Policy and Management and Applied
-Biostatistics and Public Health Data Science.</p>
-</div>
-<div id="finance" class="section level2">
-<h2>Finance</h2>
-<p>My comfort using advanced formulas and creating dashboards in Excel
-have allowed me to track activity fees, recruitment targets, and project
-spending. Through my coursework I have also witnessed the benefits of
-using Tableau, SAS, and R to answer data analytic questions.</p>
-</div>
-<div id="mentorship" class="section level2">
-<h2>Mentorship</h2>
-<p>I am a proud member of a DEI group that is focused on equitable
-access to mentorship opportunities for non-faculty staff. My work has
-inspired me to lead multiple mini-1-on-1s and applied workshops with
-interested staff to cover best practices, Excel formulas and dashboards.
-My education has refined this drive and increased my capacity to widen
-my offerings.</p>
-</div>
+src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Puzzle.jpg" /></p>
 
 
 
-</div>
-</div>
 
 </div>
 
@@ -452,35 +332,6 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
-<script>
-$(document).ready(function ()  {
-
-    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
-    $('.unlisted.unnumbered').addClass('toc-ignore')
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

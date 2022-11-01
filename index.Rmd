@@ -1,12 +1,40 @@
 ---
-title: "My awesome website"
+title: "Welcome."
 output: 
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
+    theme: flatly
 ---
 
-# This is Jeff's awesome website
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+My name is Jennifer Mizhquiri. My passion lies in the nexus points of business intelligence, responsible data analysis, and employee wellness. 
+
+## Project Management
+
+I was a new manager five months before the pandemic and knowing how these three intersect to drive win-win solutions for employer and employee has been essential. Since the pandemic, I have hired and retained a more than doubling of direct-report staff and have worked with a diverse group to ensure that we are able to meet all project deliverables. 
+
+## Integrating Processes 
+
+My motto can be boiled down to Integration, Implementation, and Innovation. And the fourth _I_ is Intersection, but that's not as catchy. At the crux of Public Health is bringing multiple stakeholders to the table to answer questions and generate new ones. Of these, to me the most important is integration.
+
+
+
+![](https://upload.wikimedia.org/wikipedia/commons/a/aa/Aufsatz.png)
+
+## Technology
+
+I have worked in the digital mental health space working with an interdisciplinary group to launch web applications. 
+
+## Public Health
+
+I have been in the research world focusing on mental and behavioral health since 2017. I am currently a 2nd - year Masters Student in Mailman where I focus on Health Policy and Management and Applied Biostatistics and Public Health Data Science.
+
+## Finance
+
+My comfort using advanced formulas and creating dashboards in Excel have allowed me to track activity fees, recruitment targets, and project spending. Through my coursework I have also witnessed the benefits of using Tableau, SAS, and R to answer data analytic questions.
+
+## Mentorship 
+
+I am a proud member of a DEI group that is focused on equitable access to mentorship opportunities for non-faculty staff. My work has inspired me to lead multiple mini-1-on-1s and applied workshops with interested staff to cover best practices, Excel formulas and dashboards. My education has refined this drive and increased my capacity to widen my offerings.
+

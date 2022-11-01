@@ -1,0 +1,16 @@
+---
+title: "Why Integration?"
+output: 
+  html_document:
+    toc: false
+    toc_float: false
+    theme: flatly
+---
+
+
+So often we find ourselves mired in processes that have long overstayed their welcome. Addressing the calculus of system-level issues whether they are in the workplace or in your community is critical to driving data-driven solutions & innovation. My passion is leveraging the access points and the pain points to streamline processes. 
+
+_Integration_ is where we can begin our journey. 
+
+
+![](https://upload.wikimedia.org/wikipedia/commons/f/fe/Puzzle.jpg)
