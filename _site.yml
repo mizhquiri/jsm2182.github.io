@@ -1,9 +1,9 @@
 name: "Yay internet!"
 output_dir: "."
 navbar:
-  title: "Welcome"
+  title: "Home"
   right:
-    - text: "Why Integration?"
+    - text: "About Me"
       href: about.html
     - icon: fa-envelope fa-lg
       href: mailto:<jsm2182@cumc.columbia.edu.com>
