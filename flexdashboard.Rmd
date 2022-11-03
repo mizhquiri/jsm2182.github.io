@@ -4,6 +4,7 @@ output:
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
+    source_code: embed
 ---
 
 ```{r setup, include = FALSE}
@@ -11,13 +12,17 @@ library(flexdashboard)
 library(tidyverse)
 library(plotly)
 library(p8105.datasets)
+```
+
+
+```{r data, include = FALSE}
 data("rest_inspec")
 ```
 
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A: How have grades changed over time?
+### Chart A: How do Health Inspection Grades vary by borough?
 
 ```{r}
 rest_inspec %>% 
@@ -32,20 +37,21 @@ rest_inspec %>%
     grade != "Z"
   ) %>% 
   separate(grade_date, into = c("year", "month", "day"), sep = "-") %>% 
-  group_by(grade, boro, year, cuisine_description, dba) %>%
+  group_by(grade, boro, year) %>%
   summarize(
     n_obs = n()) %>% 
   plot_ly(
-    x = ~n_obs, y = ~year, color = ~grade, 
+    x = ~n_obs, y = ~grade, color = ~boro, 
     type = "bar", mode = "markers",
     alpha = .5
-  )
+  ) %>% 
+  layout(xaxis = list(title = '# of Graded Events'), 
+    yaxis = list(title = 'Grade'), legend = list(title = list(text = '<b>Boro')))
+                                                            
  
 ```
 
-Column {data-width=350}
-------------------------:-----------------------------------------------
-### Chart B: How many "critical" flags been amassed per grade?
+### Chart B: What is the distribution of "critical" violations per grade?
 
 ```{r}
   rest_inspec %>% 
@@ -64,11 +70,16 @@ Column {data-width=350}
   plot_ly(
     x = ~grade, y = ~n_obs, 
     type = "bar"
-  )
+  ) %>% 
+  layout(xaxis = list(title = 'Grade'), 
+    yaxis = list(title = '# of Critical Violations'), legend = list(title = list(text = '<b>Boro')))
 ```
 
 
-### Chart C: Safest Neighborhoods to get pizza
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart C: Where can I get the "safest" Grade A pizza?
 
 ```{r}
 rest_inspec %>% 
@@ -81,7 +92,8 @@ rest_inspec %>%
     grade == "A",
     cuisine_description == "Pizza") %>% 
   mutate(
-    dba = as.factor(dba)
+    dba = as.factor(dba),
+    dba = fct_reorder(dba, score)
   ) %>% 
   mutate(
     address = str_c(dba,"\n", street,",", zipcode)) %>% 
@@ -89,6 +101,9 @@ rest_inspec %>%
   x = ~score, y = ~dba, color = ~boro,
 type = "bar", mode = "markers",
 alpha = .5, text = ~address
-  )
+  ) %>% 
+  layout(xaxis = list(title = 'Score'), 
+    yaxis = list(title = 'Place'), legend = list(title = list(text = '<b>Boro')))
+  
 ```
 
